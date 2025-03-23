@@ -1,0 +1,12 @@
+[project]
+name = "nf-worker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "pydantic-core>=2.27.2",
+    "pydantic-settings>=2.8.1",
+    "temporalio>=1.10.0",
+]
