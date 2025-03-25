@@ -12,3 +12,7 @@ wheels/
 # environment variables
 .env
 .envrc
+
+# slurm stuff
+slurm-*.out
+.vscode
