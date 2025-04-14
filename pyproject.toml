@@ -10,7 +10,9 @@ dependencies = [
     "pydantic-settings>=2.8.1",
     "pytest>=8.3.5",
     "pytest-asyncio>=0.25.3",
-    "sqlalchemy[asyncio,asyncpg]>=2.0.39",
+    "sqlalchemy[asyncio]>=2.0.39",
     "temporalio>=1.10.0",
 ]
-package = { include = ["cmgd_nextflow_worker"] }
+
+[project.scripts]
+cmgd-db = "cmgd_nextflow_worker.external_db:main"

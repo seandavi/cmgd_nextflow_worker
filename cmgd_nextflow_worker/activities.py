@@ -26,10 +26,6 @@ class ActivityContainer:
         return CommandResult(returncode, stdout, stderr)
     
     @activity.defn
-    async def say_hello(self, input: CMGDJobInput) -> str:
-        return f"Hello, {input.sample_id}, {input.run_ids}!"
-
-    @activity.defn
     async def sbatch_submit(self, cmd: str) -> int:
         result = await self.run_cmd(cmd)
         

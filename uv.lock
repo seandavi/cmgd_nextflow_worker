@@ -48,7 +48,7 @@ requires-dist = [
     { name = "pydantic-settings", specifier = ">=2.8.1" },
     { name = "pytest", specifier = ">=8.3.5" },
     { name = "pytest-asyncio", specifier = ">=0.25.3" },
-    { name = "sqlalchemy", extras = ["asyncio", "asyncpg"], specifier = ">=2.0.39" },
+    { name = "sqlalchemy", extras = ["asyncio"], specifier = ">=2.0.39" },
     { name = "temporalio", specifier = ">=1.10.0" },
 ]
 
