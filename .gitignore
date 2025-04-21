@@ -16,3 +16,4 @@ wheels/
 # slurm stuff
 slurm-*.out
 .vscode
+example.db
