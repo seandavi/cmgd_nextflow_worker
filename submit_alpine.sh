@@ -16,6 +16,9 @@ module load git
 module load nextflow
 
 cd $SLURM_SCRATCH
+#cd /scratch/alpine/seda0001_amc/jobs
+#mkdir $2
+#cd $2
 export NXF_MODE=google
 #nextflow run main.nf --run_ids=$1 --sample_id=$2 -profile alpine
 nextflow run seandavi/curatedMetagenomicsNextflow --run_ids=$1 --sample_id=$2 -profile alpine
